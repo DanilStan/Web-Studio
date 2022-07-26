@@ -1,0 +1,23 @@
+@import './utils/variables';
+@import './utils/placeholder';
+@import './utils/mixin';
+@import './base/reset';
+@import './base/base';
+@import './components/header-page';
+@import './components/hero-page';
+@import './components/features-page';
+@import './components/description-page';
+@import './components/team-page';
+@import './components/clients-page';
+@import './components/footer-page';
+@import './components/footer-form';
+@import './components/portfolio-page';
+@import './components/modal-page';
+
+
+
+@media (min-width: 500px) {
+    body {
+        background-color: tomato;
+    }
+}
