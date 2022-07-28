@@ -24,6 +24,7 @@
 }
 
 body {
+  position: relative;
   background-color: #fff;
   color: #212121;
   font-family: "Roboto", sans-serif;
@@ -92,11 +93,32 @@ body {
 
 .menu {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: teal;
+}
+.menu.is-open {
+  display: block;
 }
 
 .menu-button {
   display: flex;
+  position: relative;
+  z-index: 2;
   padding: 0;
   border: none;
   background-color: #fff;
+}
+.menu-button .menu-button__cross {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__cross {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__menu {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -124,13 +124,41 @@
 
 .menu {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: teal;
+
+    &.is-open {
+        display: block;
+    }
 }
 
 .menu-button {
     display: flex;
+    position: relative;
+    z-index: 2;
 
     padding: 0;
 
     border: none;
     background-color: #fff;
+
+    & .menu-button__cross {
+        display: none;
+    }
+}
+
+.menu-button__cross {
+    .menu-button.is-open & {
+        display: block;
+    }
+}
+
+.menu-button__menu {
+    .menu-button.is-open & {
+        display: none;
+    }
 }

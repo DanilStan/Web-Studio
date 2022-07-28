@@ -57,11 +57,14 @@
             </li>
           </ul>
 
-          <button class="menu-button" type="button">
-            <svg width="40px" height="40px"><use href="./images/sprite.svg#icon-menu"></use></svg>
+          <button class="menu-button" type="button" data-menu-button aria-expanded="false">
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              <use class="menu-button__cross" href="./images/sprite.svg#icon-close"></use>
+              <use class="menu-button__menu" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
           </button>
           <!-- Меню для телефона -->
-          <div class="menu">
+          <div class="menu" data-menu>
             <ul class="menu-nav list">
               <li class="menu-nav__item">
                 <a href="./index.html" class="menu-nav__link link">Студия</a>
@@ -573,5 +576,6 @@
     </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
