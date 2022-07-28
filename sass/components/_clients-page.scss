@@ -1,6 +1,7 @@
 .clients__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 30px;
 
     color: $titleTextColor;
     text-align: center;
@@ -9,57 +10,57 @@
     font-size: 28px;
     line-height: 1.16;
 
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 33px;
-        /* identical to box height */
-    
-        text-align: center;
-        letter-spacing: 0.03em;
 }
 
-// .clients__list {
-//     display: flex;
-//     flex-wrap: nowrap;
-//     justify-content: center;
-// }
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media screen and (max-width: 449px) {
+        justify-content: center;
+    }
+}
 
-// .clients__link {
-//     @extend %displayFlexCenter;
+.clients__link {
+    @extend %displayFlexCenter;
 
-//     width: 170px;
-//     height: 92px;
-//     border: 1px solid #afb1b8;
-//     border-radius: 4px;
+    // width: 170px;
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
 
-//     @include primaryAnimation(border-color);
+    @include primaryAnimation(border-color);
 
-//     &:hover,
-//     &:focus {
-//         border-color: $acentColor;
-//     }
+    &:hover,
+    &:focus {
+        border-color: $acentColor;
+    }
 
-//     & a {
-//         display: flex;
-//     }
-// }
+    & a {
+        display: flex;
+    }
+}
 
-// .clients__svg {
-//     fill: #afb1b8;
+.clients__svg {
+    fill: #afb1b8;
 
-//     @include primaryAnimation(fill);
+    @include primaryAnimation(fill);
 
-//     .clients__link:hover &,
-//     .clients__link:focus & {
-//         fill: $acentColor;
-//     }
-// }
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: $acentColor;
+    }
+}
 
-// .clients__item {
-//     &:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
+.clients__item {
+    &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+    }
+    @media screen and (max-width: 449px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
 
