@@ -5,16 +5,19 @@
 .team__title {
     padding-top: 0;
     margin-top: 0;
-    // margin-bottom: 50px;
     margin-bottom: 30px;
 
     font-weight: 700;
-    // font-size: 36px;
     font-size: 28px;
-    // line-height: 1.16;
     line-height: 1.17;
     text-align: center;
     color: $titleTextColor;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 
 .team__list {
@@ -23,6 +26,10 @@
         flex-wrap: wrap;
     }
     display: block;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .team__item {
@@ -52,6 +59,13 @@
 
         &:nth-last-child(-n + 2) {
             margin-bottom: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 0px;
         }
     }
 }

@@ -56,6 +56,14 @@
     // transform: translate(-50%, -50%) scale(1);
 
     @include primaryAnimation(translate);
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+        max-width: none;
+        min-width: none;
+        min-height: auto;
+    }
 }
 
 
@@ -107,6 +115,10 @@
 
     font-weight: 700;
     font-size: 20px;
+
+    // @media screen and (min-width: 1200px) {
+    //     width: 448px;
+    // }
 }
 
 .modal-form__lable {
@@ -196,7 +208,6 @@
 
     width: 100%;
     font-size: 12px;
-    line-height: 14px;
     line-height: 1.71;
     color: $secondaryTextColor;
     cursor: pointer;
@@ -204,6 +215,12 @@
     & a {
         line-height: 1.71;
         color: $acentColor;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 15px;
+        font-size: 14px;
+        line-height: inherit;
     }
 }
 
@@ -225,6 +242,10 @@
         opacity: 0;
         pointer-events: none;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 15px;
+    }
 }
 
 .checkbox__btn--on {
@@ -242,6 +263,10 @@
     .checkbox__outcheckbox:checked ~ & {
         opacity: 1;
         pointer-events: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 15px;
     }
 }
 

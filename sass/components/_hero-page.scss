@@ -5,6 +5,11 @@
     // padding-top: 200px;
     background-color: $secondaryBackgroundColor;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 200px;
+        padding-top: 200px;
+    }
 }
 
 .overlay {
@@ -22,6 +27,12 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/header-img-768px.jpg);
         height: 400px;
         max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/header-img-768px.jpg);
+        height: 600px;
+        max-width: 1600px;
     }
 }
 
@@ -41,6 +52,12 @@
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+    }
 }
 
 .hero__button {

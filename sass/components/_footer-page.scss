@@ -5,11 +5,23 @@
     background-color: $secondaryBackgroundColor;
 }
 
+.footer__flex {
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
 .footer-flex {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 76px;
-    padding-right: 89px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 76px;
+        padding-right: 89px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .footer-contacts__link {
@@ -23,6 +35,11 @@
     line-height: 1.19;
     color: $primaryLightColor;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        font-size: 26px;
+    }
 }
 
 .footer-contacts__logo {
@@ -38,6 +55,15 @@
 
     &:last-child {
         margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
     }
 }
 
@@ -57,6 +83,11 @@
     &:focus {
         color: $acentColor;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 231px;
+        text-align: left;
+    }
 }
 
 .address__link--white {
@@ -64,8 +95,11 @@
 }
 
 .social {
-    // margin-left: 70px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
 
 .social__title {
@@ -75,6 +109,10 @@
     color: $primaryLightColor;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 14px;
+    }
 }
 
 .social__list {
@@ -82,6 +120,10 @@
     justify-content: center;
     
     margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .social__item {
