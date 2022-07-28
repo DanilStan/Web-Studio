@@ -5,9 +5,12 @@
     background-color: $secondaryBackgroundColor;
 }
 
-// .footer__flex {
-//     display: flex;
-// }
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 76px;
+    padding-right: 89px;
+}
 
 .footer-contacts__link {
     display: block;

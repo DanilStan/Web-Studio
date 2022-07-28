@@ -1,6 +1,10 @@
 .features__list {
     // display: flex;
     // width: 100%;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .features__title {
@@ -21,12 +25,27 @@
 
     color: $secondaryTextColor;
     line-height: 1.71;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+    }
 }
 
 .features__item {
     &:not(:last-child) {
         margin-bottom: 30px;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+
+        &:nth-child(-n + 2) {
+            margin-bottom: 57px;
+        }
+    }
+
 }
 
 .features__icon {

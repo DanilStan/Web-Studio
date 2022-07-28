@@ -8,6 +8,10 @@
     justify-content: space-between;
 
     padding: 10px 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 0;
+    }
 }
 
 .main-nav {
@@ -31,6 +35,10 @@
     // font-size: 26px;
     // line-height: 1.19;
     color: $logoDarkColor;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 88px;
+    }
 }
 
 .main-nav__logo {
@@ -78,16 +86,20 @@
     // align-items: center;
     // margin-left: auto;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
         align-items: center;
         margin-left: auto;
     }
 }
 
 .secondary-nav__item {
-    &:nth-child(1) {
-        margin-right: 30px;
+    // &:nth-child(1) {
+    //     margin-right: 30px;
+    // }
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
     }
 }
 
@@ -106,7 +118,7 @@
 }
 
 .secondary-nav__logo {
-    margin-right: 10px;
+    // margin-right: 10px;
 
     fill: $secondaryTextColor;
 
@@ -115,6 +127,10 @@
     .secondary-nav__link:hover &,
     .secondary-nav__link:focus & {
         fill: $acentColor;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 8px;
     }
 }
 

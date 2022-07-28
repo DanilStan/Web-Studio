@@ -1,6 +1,10 @@
-// .ft-form {
-//     margin-left: 93px;
-// }
+.ft-form {
+    // margin-left: 93px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .ft-form__text {
     margin-top: 0;
@@ -14,10 +18,16 @@
 .ft-form__box {
     // display: flex;
     text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .ft-form__flex {
     display: flex;
+
 }
 
 .ft-form__lable input {
@@ -36,6 +46,10 @@
 
     &::placeholder {
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
     }
 }
 
@@ -65,4 +79,9 @@
         letter-spacing: 0.06em;
     }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
