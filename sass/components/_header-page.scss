@@ -127,9 +127,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    padding: 48px 40px;
 
-    background-color: teal;
+    width: 100%;
+    background-color: #fff;
 
     &.is-open {
         display: block;
@@ -152,8 +153,15 @@
 }
 
 .menu-button__cross {
+    @include primaryAnimation(fill);
+
     .menu-button.is-open & {
         display: block;
+    }
+
+    &:hover,
+    &:focus {
+        fill: $acentColor;
     }
 }
 
@@ -161,4 +169,82 @@
     .menu-button.is-open & {
         display: none;
     }
+}
+
+.menu-nav__link {
+    display: block;
+
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $titleTextColor;
+    @include primaryAnimation(color);
+
+    &:hover,
+    &:focus {
+        color: $acentColor;
+    }
+}
+
+.menu-nav__item {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    &:last-child {
+        margin-bottom: 302px;
+    }
+}
+
+.menu-contacts__link {
+    display: block;
+    margin-bottom: 64px;
+
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: $secondaryTextColor;
+    
+    @include primaryAnimation(color);
+
+    &:hover,
+    &:focus {
+        color: $acentColor;
+    }
+
+    &--primary {
+        margin-bottom: 32px;
+
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        color: $acentColor;
+    }
+}
+
+.menu-social {
+    display: flex;
+}
+
+.menu-social__item {
+    padding-right: 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    letter-spacing: 0.02em;
+
+    &:not(:first-child) {
+        padding-left: 10px;
+    }
+
+    &:last-child {
+        border: none;
+        padding-right: 0;
+    }
+}
+
+.menu-social__link {
+    color: $acentColor;
 }
