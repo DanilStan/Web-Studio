@@ -1,8 +1,10 @@
-.ft-form {
-    margin-left: 93px;
-}
+// .ft-form {
+//     margin-left: 93px;
+// }
 
 .ft-form__text {
+    margin-top: 0;
+    text-align: center;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -10,11 +12,14 @@
 }
 
 .ft-form__box {
-    display: flex;
+    // display: flex;
+    text-align: center;
 }
 
 .ft-form__lable input {
-    width: 358px;
+    // width: 358px;
+    width: 100%;
+    margin-bottom: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -31,9 +36,10 @@
 }
 
 .ft-form__btn {
-    @extend %displayFlexCenter;
+    display: flex;
+    justify-content: center;
 
-    margin-left: 12px;
+    // margin-left: 12px;
     padding: 10px 28px;
     min-width: 200px;
 
