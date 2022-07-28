@@ -20,11 +20,10 @@
       <div class="container">
         <div class="nav-container">
           <!-- Навигация сайта -->
+          <a href="./" class="main-nav__link link" lang="en"
+            ><span class="main-nav__logo">Wed</span>Studio</a
+          >
           <nav class="main-nav">
-            <a href="./" class="main-nav__link link" lang="en"
-              ><span class="main-nav__logo">Wed</span>Studio</a
-            >
-
             <ul class="main-list list">
               <li class="main-list__item">
                 <a href="./index.html" class="main-list__link main-list__link--acent link"
@@ -57,6 +56,51 @@
               >
             </li>
           </ul>
+
+          <button class="menu-button" type="button">
+            <svg width="40px" height="40px"><use href="./images/sprite.svg#icon-menu"></use></svg>
+          </button>
+          <!-- Меню для телефона -->
+          <div class="menu">
+            <ul class="menu-nav list">
+              <li class="menu-nav__item">
+                <a href="./index.html" class="menu-nav__link link">Студия</a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="./portfolio.html" class="menu-nav__link link">Портфолио</a>
+              </li>
+              <li class="menu-nav__item">
+                <a href="./" class="menu-nav__link link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="menu-contacts list">
+              <li class="menu-contacts__item">
+                <a href="tel:+380961111111" class="menu-contacts__link link"></a>
+              </li>
+              <li class="menu-contacts__item">
+                <a href="mailto:info@devstudio.com" class="menu-contacts__link link"></a>
+              </li>
+            </ul>
+
+            <ul class="menu-social list">
+              <li class="menu-social__item">
+                <a class="menu-social__link link" href="./">Instagram</a
+                ><span class="menu-social__decoration"></span>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link link" href="./">Twitter</a
+                ><span class="menu-social__decoration"></span>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link link" href="./">Facebook</a
+                ><span class="menu-social__decoration"></span>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link link" href="./">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -64,13 +108,13 @@
     <!-- Главный контент страницы -->
     <main>
       <!-- Секция герой или приветствия -->
-      <section class="hero overlay">
+      <!-- <section class="hero overlay">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
-      </section>
+      </section> -->
 
       <!-- Секция преимущества сервиса -->
-      <section class="features section">
+      <!-- <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">Преимущиства сервиса</h2>
 
@@ -121,10 +165,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секция занятий сайта -->
-      <section class="description description--narrow section">
+      <!-- <section class="description description--narrow section">
         <div class="container">
           <h2 class="description__title">Чем мы занимаемся</h2>
           <ul class="description__list list">
@@ -163,10 +207,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секция "Наша команда" -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
@@ -332,10 +376,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Постояные клиенты -->
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
 
@@ -384,11 +428,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Подвал сайта -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__flex">
         <div class="footer-contacts">
           <a href="./" lang="en" class="footer-contacts__link link"
@@ -448,7 +492,7 @@
           </ul>
         </div>
         <!-- Форма футера -->
-        <form class="ft-form">
+    <!-- <form class="ft-form">
           <p class="ft-form__text">Подпишитесь на рассылку</p>
           <div class="ft-form__box">
             <label class="ft-form__lable">
@@ -461,12 +505,12 @@
               </svg>
             </button>
           </div>
-        </form>
-      </div>
-    </footer>
+        </form> -->
+    <!-- </div>
+    </footer> -->
 
     <!-- Модальное окно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="submit" class="modal__button" data-modal-close>
           <div class="modal__btn">
@@ -526,7 +570,7 @@
           <button type="submit" class="button-form"><p>Отправить</p></button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>
