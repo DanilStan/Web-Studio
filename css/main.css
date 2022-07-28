@@ -1,3 +1,9 @@
+.features__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -247,4 +253,34 @@ body {
   border: none;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.features__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.features__text {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #757575;
+  line-height: 1.71;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.features__icon {
+  width: 100%;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
