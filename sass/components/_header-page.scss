@@ -130,6 +130,8 @@
     display: flex;
     align-items: center;
 
+    font-weight: 500;
+    letter-spacing: 0.02em;
     color: $secondaryTextColor;
 
     @include primaryAnimation(color);
@@ -154,6 +156,10 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-right: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
     }
 }
 
@@ -185,8 +191,14 @@
     background-color: #fff;
 
     &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+}
+
+.menu-nav {
+    flex-grow: 1;
 }
 
 .menu-button {
@@ -239,6 +251,7 @@
 .menu-nav__link {
     display: block;
 
+    font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -254,10 +267,6 @@
 .menu-nav__item {
     &:not(:last-child) {
         margin-bottom: 32px;
-    }
-
-    &:last-child {
-        margin-bottom: 302px;
     }
 }
 
