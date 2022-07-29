@@ -105,9 +105,9 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 354px;
 
-        &:nth-child(1) {
-            height: 100%;
-        }
+        // &:nth-child(1) {
+        //     height: 100%;
+        // }
     }
 
     @media screen and (min-width: 1200px) {
@@ -130,6 +130,9 @@
     text-decoration: none;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         margin: 0;
     }
 }
@@ -173,6 +176,11 @@
 }
 
 .filter__border {
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-grow: 1;
+    }
+
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
